@@ -36,8 +36,8 @@ class OpenGptLangChain:
 
             print(response.content)
         except Exception as e:
-            logging.error(f"Ошибка при запросе к AI: {e}")
-            print("Что-то пошло не так. Попробуйте ещё раз.")
+            logging.error(f"Помилка в запиті до AI: {e}")
+            print("Щось пішло не так")
 
 gpt = OpenGptLangChain(memory_limit=5)
 gpt.send("В яких ситуаціях кіт може їсти піццу в космосі?")
